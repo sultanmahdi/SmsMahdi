@@ -6,7 +6,7 @@ from colorama import Fore
 from time import sleep
 proxy = {"https": "127.0.0.1.8000"}
 os.system("clear")
-print(Fore.CYAN)
+print(Fore.GREEN)
 print("""
 
 
@@ -29,7 +29,7 @@ print("""
 """)
 sleep(3)
 os.system("clear")
-print(Fore.GREEN)
+print(Fore.RED)
 print("""
 
 
@@ -52,9 +52,9 @@ def snap(phone):
     try:
         snapR = requests.post("https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", headers=snapH, json=snapD)
         if "OK" in snapR.text:
-            print (Fore.CYAN+"[+]snap SEND")
+            print (Fore.GREEN+"[+]snap SEND")
         else:
-            print (Fore.CYAN+"[+]snap SEND")
+            print (Fore.GREEN+"[+]snap SEND")
     except:
         print ("not send")
 
