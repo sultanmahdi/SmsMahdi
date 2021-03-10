@@ -23,7 +23,7 @@ print("""
 """)
 sleep(3)
 os.system("clear")
-print(Fore.RED)
+print(Fore.GREEN)
 print("""
 
 
