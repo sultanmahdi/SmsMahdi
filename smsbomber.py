@@ -41,7 +41,7 @@ _\ \ | | | | \__ \/ \/  \ (_) | | | | | | |_) |  __/ |
 \__/_| |_| |_|___/\_____/\___/|_| |_| |_|_.__/ \___|_|   
                                                          
 
-________________________
+******************************************************
 
   ---- >>>> Mahdi_Hacker 
 """)
@@ -65,7 +65,7 @@ def shad(phone):
     try:
         shadR = requests.post("https://shadmessenger12.iranlms.ir/", headers=shadH, json=shadD)
         if "OK" in shadR.text:
-            print (Fore.RED+"shad Send")
+            print (Fore.Green+"shad Send")
         else:
             print ("Attack failed :(")
     except:
