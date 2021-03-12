@@ -6,22 +6,28 @@ from colorama import Fore
 from time import sleep
 proxy = {"https": "127.0.0.1.8000"}
 os.system("clear")
-print(Fore.GREEN)
+print(Fore.PURPLE)
 print("""
+
+
+
                                                                                                                                                _____                    
   ____              
 / ___|  _ __ ___   ____ | |  | |  __ _   ___  | | __
 \___ \ | '_ ` _ \ / __| | |__| | / _` | / __| | |/ /
  ___)  | | | | |  \__ \ |  __| ||(_| | | (__  |  <
 |____/ |_| |_| |_| ___/ | |  |_| \__,_| \___| |_|\_\
+
+
 """)
-sleep(3)
+sleep(4)
 os.system("clear")
 print(Fore.GREEN)
 print("""
 
-                                                                                                                               
-__  __       _         _ _         _   _            _
+
+
+ __  __       _         _ _         _   _            _
 |  \/  | __ _| |__   __| (_)       | | | | __ _  ___| | _____ _ __
 | |\/| |/ _` | '_ \ / _` | |       | |_| |/ _` |/ __| |/ / _ \ '__|
 | |  | | (_| | | | | (_| | |       |  _  | (_| | (__|   <  __/ |
@@ -32,7 +38,10 @@ __  __       _         _ _         _   _            _
 
                                                         
 ################################################################
+
   ---- >>>> SmsHack
+""")
+
 """)
 def snap(phone):
     #snap api
@@ -54,7 +63,7 @@ def shad(phone):
     try:
         shadR = requests.post("https://shadmessenger12.iranlms.ir/", headers=shadH, json=shadD)
         if "OK" in shadR.text:
-            print (Fore.Green+"shad Send")
+            print (Fore.RED+"shad Send")
         else:
             print ("Attack failed :(")
     except:
@@ -164,4 +173,3 @@ try:
 
 except:
         print("not")
-© 2021 GitHub, Inc.
